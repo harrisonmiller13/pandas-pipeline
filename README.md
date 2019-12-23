@@ -5,6 +5,9 @@ A data science flow is most often a sequence of steps — datasets must be clean
 These tasks can, of course, be done with many single-step functions/methods that are offered by packages like Pandas but a more elegant way is to use a pipeline. In almost all cases, a pipeline reduces the chance of error and saves time by automating repetitive tasks.
 Pandas also offer a .pipe method which can be used for similar purposes with user-defined functions. However, we are going to use a library called pdpipe, which specifically addresses this pipelining issue with Pandas DataFrame.
 
+First to have a look at our data, we used pandas profiling to generate an EDA report
+
+Functions were made to classify a house by size according to number of rooms and 
 
 At this point, we can look back and see what our pipeline does to the DataFrame right from the beginning,
 -drops a specific column
