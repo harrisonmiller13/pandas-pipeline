@@ -19,3 +19,6 @@ pipeline+=pdp.ApplyByCols('Price',price_tag,'Price_tag',drop=False)
 pipeline+=pdp.ValDrop(['drop'],'Price_tag')
 pipeline+= pdp.ColDrop('Price_tag')
 df5 = pipeline(df)
+
+NLTK was then used to tokenize the address field
+from there we are able to extract the state and create a column for it using the pipeline
