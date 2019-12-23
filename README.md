@@ -21,4 +21,4 @@ pipeline+= pdp.ColDrop('Price_tag')
 df5 = pipeline(df)
 
 NLTK was then used to tokenize the address field
-from there we are able to extract the state and create a column for it using the pipeline
+After tokenizing the address field, we are able to extract the state and create a column for it using the pipeline
