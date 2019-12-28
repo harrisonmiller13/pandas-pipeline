@@ -6,6 +6,8 @@ A data science flow is most often a sequence of steps — datasets must be clean
 Pandas also offer a .pipe method which can be used for similar purposes with user-defined functions. However, we are going to use a library called pdpipe, which specifically addresses this pipelining issue with Pandas DataFrame.
 
 First to have a look at our data, we used pandas profiling to generate an EDA report
+Pandas profiling generates profile reports from a pandas DataFrame. The pandas df.describe() function is great but a little basic for serious exploratory data analysis. pandas_profiling extends the pandas DataFrame with df.profile_report() for quick data analysis.
+
 
 Functions were made to classify a house by size according to number of rooms and 
 
