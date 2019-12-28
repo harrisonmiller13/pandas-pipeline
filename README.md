@@ -7,9 +7,18 @@ Pandas also offer a .pipe method which can be used for similar purposes with use
 
 First to have a look at our data, we used pandas profiling to generate an EDA report
 Pandas profiling generates profile reports from a pandas DataFrame. The pandas df.describe() function is great but a little basic for serious exploratory data analysis. pandas_profiling extends the pandas DataFrame with df.profile_report() for quick data analysis.
+For each column the following statistics - if relevant for the column type - are presented in an interactive HTML report:
+
+Essentials: type, unique values, missing values
+Quantile statistics like minimum value, Q1, median, Q3, maximum, range, interquartile range
+Descriptive statistics like mean, mode, standard deviation, sum, median absolute deviation, coefficient of variation, kurtosis, skewness
+Most frequent values
+Histogram
+Correlations highlighting of highly correlated variables, Spearman, Pearson and Kendall matrices
+Missing values matrix, count, heatmap and dendrogram of missing values
 
 
-Functions were made to classify a house by size according to number of rooms and 
+Functions were made to classify a house by size according to number of rooms and price
 
 At this point, we can look back and see what our pipeline does to the DataFrame right from the beginning,
 -drops a specific column
