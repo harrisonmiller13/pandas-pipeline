@@ -25,3 +25,5 @@ df5 = pipeline(df)
 
 NLTK was then used to tokenize the address field
 After tokenizing the address field, we are able to extract the state and create a column for it using the pipeline
+
+Using pandas pipline, one can easily and quickly put together a pipline for incoming new data with very few lines of code
