@@ -22,7 +22,8 @@ Next we begin to make the pipeline
 Functions were made to classify a house by size according to number of rooms and price
 
 size function was used prior to pipeline and one hot encoded in the pipeline
-the price function was then used in t
+
+the price function was then used in the pipeline with pdp.ApplyByCols to filter the target price range
 
 At this point, we can look back and see what our pipeline does to the DataFrame right from the beginning,
 -drops a specific column
@@ -30,7 +31,8 @@ At this point, we can look back and see what our pipeline does to the DataFrame 
 -tags data based on a user-defined function
 -drops rows based on the tag
 -drops the temporary tagging column
-All of this — using the following five lines of code,
+All of this — using the following five lines of code:
+
 pipeline = pdp.ColDrop('Avg. Area House Age')
 pipeline+= pdp.OneHotEncode('House_size')
 pipeline+=pdp.ApplyByCols('Price',price_tag,'Price_tag',drop=False)
