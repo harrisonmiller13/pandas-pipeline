@@ -22,7 +22,7 @@ Next we begin to make the pipeline
 Functions were made to classify a house by size according to number of rooms and price
 
 size function was used prior to pipeline and one hot encoded in the pipeline
-
+the price function was then used in t
 
 At this point, we can look back and see what our pipeline does to the DataFrame right from the beginning,
 -drops a specific column
