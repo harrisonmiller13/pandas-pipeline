@@ -19,6 +19,7 @@ Missing values matrix, count, heatmap and dendrogram of missing values
 
 Next we begin to make the pipeline
 
+Functions were made to classify a house by size according to number of rooms and price
 
 At this point, we can look back and see what our pipeline does to the DataFrame right from the beginning,
 -drops a specific column
